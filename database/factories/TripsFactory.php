@@ -22,7 +22,8 @@ class TripsFactory extends Factory
             'to' => $this->faker->name(),
             'dateTime' => $this->faker->dateTime(),
             'cost' => $this->faker->randomFloat(2,650,2000),
-            'capacity' => $this->faker->numberBetween(1,14)
+            'capacity' => $this->faker->numberBetween(1,14),
+            'bookingfor' => 1
         ];
     }
 }

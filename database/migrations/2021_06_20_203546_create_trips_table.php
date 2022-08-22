@@ -20,7 +20,8 @@ class CreateTripsTable extends Migration
             $table->string('to');
             $table->dateTime('datetime');
             $table->double('cost');
-            $table->integer('capacity');
+            $table->integer('capacity')->default(1);
+            $table->integer('bookingfor')->default(0);
             $table->timestamps();
         });
 
