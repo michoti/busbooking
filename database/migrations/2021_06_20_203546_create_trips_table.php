@@ -20,7 +20,7 @@ class CreateTripsTable extends Migration
             $table->string('to');
             $table->dateTime('datetime');
             $table->double('cost');
-
+            $table->integer('capacity');
             $table->timestamps();
         });
 

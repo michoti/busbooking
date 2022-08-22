@@ -19,7 +19,7 @@ class BussesFactory extends Factory
         return [
             'name' => $this->faker->name(),
             'trip_id' => $this->faker->numberBetween(1,19),
-            'capacity' => $this->faker->numberBetween(14,40)
+            'capacity' => 14
         ];
     }
 }
