@@ -5,6 +5,7 @@ namespace Database\Factories;
 use App\Models\Team;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Laravel\Jetstream\Features;
 
@@ -29,7 +30,7 @@ class UserFactory extends Factory
             'email' => 'admin@email.com',
             'email_verified_at' => now(),
             'isAdmin' => 1,
-            'password' => 'admin12345', // password
+            'password' => Hash::make('admin12345'), // password
             'remember_token' => Str::random(10),
         ];
     }
